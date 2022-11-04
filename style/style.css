@@ -1,0 +1,61 @@
+html {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    color: #EEE;
+    background-color: #222;
+    font-family: sans-serif;
+}
+
+div.box {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    max-width: 450px;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+label.right {
+    justify-content: flex-start;
+}
+
+div.blocks div {
+    display: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+div#errorsBlock {
+    background-color: darkred;
+    padding-bottom: 0;
+    
+}
+
+div#sentBlock {
+    background-color: darkgreen;
+}
+
+input#creditCard {
+    display: none;
+}
+
+label#creditCardBlock span {
+    color: #BBB;
+    background-color: #444;
+    text-decoration: underline;
+}

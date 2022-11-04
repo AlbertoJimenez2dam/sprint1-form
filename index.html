@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Objetos</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="blocks">
+            <div id="errorsBlock">
+                Se detectaron los siguientes errores al procesar el formulario:
+                <ul id="errorsUl">
+                </ul>
+            </div>
+            <div id="sentBlock">
+                Formulario validado y enviado correctamente
+            </div>
+        </div>
+        <p>
+            Los campos marcados con un asterisco (*) son obligatorios.
+        </p>
+        <form onsubmit="return validateForm()">  
+            <label>
+                Nombre y apellido *
+                <input type="text" name="nameSur" id="nameSur">
+            </label>
+            <label>
+                Email *
+                <input type="text" name="email" id="email">
+            </label>
+            <label>
+                Contraseña *
+                <input type="password" name="password" id="password">
+            </label>
+            <label>
+                Confirmación de contraseña *
+                <input type="password" name="passwordConfirm" id="passwordConfirm">
+            </label>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sex" value="man">Hombre</radio>
+                <input type="radio" name="sex" value="woman">Mujer</radio>
+                <input type="radio" name="sex" value=>No especificado</radio>
+            </fieldset>
+            <label>
+                Fecha de nacimiento
+                <input type="date" id="birth">
+            </label>
+            <label>
+                Dirección
+                <input type="text" name="address" id="address">
+            </label>
+            <label>
+                País
+                <select name="country" id="country">
+                    <option selected value>No especificado</option>
+                    <option value="spain">España</option>
+                    <option value="portugal">Portugal</option>
+                </select>
+            </label>
+            <label id="creditCardBlock">
+                Número de tarjeta de crédito
+                <input type="text" name="creditCard" id="creditCard" placeholder="1234-5678-9012">
+                <span id="creditCardBlocked">Dirección y país necesarios</span>
+            </label>
+            <label class="right">
+                <input type="checkbox" name="notifications" value="true">
+                Activar notificaciones de la pagina
+            </label>
+            <label class="right">
+                <input type="checkbox" name="news" value="true">
+                Recepción de la revista digital
+            </label>
+            <button id="submitForm">Enviar</button>
+        </form>
+    </div>
+    <script src="script/code.js"></script>
+</body>
+</html>
